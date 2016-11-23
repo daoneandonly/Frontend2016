@@ -1,0 +1,78 @@
+/* Geschreven door Steven Whitton */
+/* Frontend 2016 Project WEB */
+
+
+/* Borderbox applied to all elements */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E6E6E9;
+    font-family: NS Sans;
+    padding: 0em;
+    margin: 0em;
+}
+
+/* Menu Balken */
+
+header {
+    background-color: white;
+    width: 100%;
+}
+
+header .navigatie {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 3em;
+    justify-content: space-between;
+}
+
+.navigatie section {
+    width: 15em;
+    display: flex;
+    padding:
+}
+
+.navigatie section{
+    width: 33%;
+}
+
+.navigatie img {
+    max-width: 5em;
+    margin: .5em;
+}
+
+.genreBalk {
+    background-color: #003082;
+    width: 100%;
+}
+
+.genreBalk {
+    margin: auto;
+}
+
+.genreBalk ul li {
+    list-style: none;
+    display: inline-block;
+    padding: .5em;
+    background-color: #003082;
+    color: white;
+    margin: 0 1em;
+}
+
+/* MAIN CONTENT */
+
+main {
+    padding: 1em;
+}
+
+/* Media Query for all sreen >1080 px */
+
+@media  screen
+        and (min-width: 1000px)
+        and (max-width: 1500px) {
+
+}
