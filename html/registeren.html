@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>NS Reis Verhalen</title>
+    </head>
+    <body>
+        <header>
+            <section class="nav"></section>
+                <nav>
+                <section class="headerLeft">
+                    <img src="img/nslogo.png" alt="">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Logo_NS.svg" alt="">
+                    <p>Menu</p>
+                </section>
+                <section class="headerRight">
+                    <section class="search">
+                        <img src="zoekIcon.png" alt="">
+                        <p>Zoeken</p>
+                    </section>
+                    <section class="mijnNs">
+                        <img src="mijnNsIcon.png" alt="">
+                        <p>Mijn NS</p>
+                    </section>
+                    <section class="english">
+                        <img src="english.png" alt="">
+                        <a href="">English</a>
+                    </section>
+                </section>
+                </nav>
+        </header>
+
+        <main>
+           <h1>Een NS account aanmaken</h1>
+           <p>Vul de volgende gegevens in om een NS account aan te maken.</p>
+            <fieldset>
+               <p class="formHeader">Algemeen</p>
+                <form action="">
+                    <label for="name">Naam</label>
+                    <input type="text" id="name">
+                    <label for="mobiel">Mobiel nummer (optioneel)</label>
+                    <input type="text" id="mobiel">
+                </form>
+                <p class="formHeader">Inloggegevens</p>
+                <form action="">
+                    <label for="email">E-mailadres</label>
+                    <input type="email" id="email" required>
+                    <label for="confirmEmail" >Bevestig e-mailadres</label>
+                    <input type="email" id="confirmEmail" required>
+                    <label for="wachtwoord">Wachtwoord</label>
+                    <input type="password" id="wachtwoord" required>
+                    <label for="bevestigWachtwoord">Bevestig wachtwoord</label>
+                    <input type="password" id="bevestigWachtwoord" required>
+                </form>
+                <form action="">
+                    <p class="formHeader">Gebruikersvoorwaarden</p>
+                    <input type="checkbox" required id="gebruikersVoorwaarden">
+                    <label for="gebruikersVoorwaarden">Ik ga akkoord met de <a href="#">gebruikersvoorwaarden</a>.</label>
+                </form>
+                <input type="submit" value="Annuleren" id="annuleren">
+                <input type="submit" value="Aanmaken" id="aanmaken">
+            </fieldset>
+        </main>
+        <footer>
+        </footer>
+    </body>
+</html>

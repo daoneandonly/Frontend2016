@@ -41,8 +41,20 @@
 
         <main>
             <aside>
-
-            </aside>
+               <fieldset>
+                  <legend>Filteren</legend>
+                   <form action="">
+                        <label for="beoordeling">Beoordeling</label>
+                        <input type="range" id="beoordeling" min="1" value="1" max="5" step="1">
+                   </form>
+                   <form action="">
+                       <label for="lengte">Lengte</label>
+                       <input type="checkbox" value="Kort (5 min)">
+                       <input type="checkbox" value="Gemiddeld (15 min)">
+                       <input type="checkbox" value="Lang (15+ min)">
+                   </form>
+               </fieldset>
+           </aside>
             <section class="item1">
                 <img src="img/artikelImage1.png" alt="">
                 <h1>Verrassing</h1>
@@ -117,7 +129,6 @@
             </section>
         </main>
         <footer>
-
         </footer>
     </body>
 </html>
