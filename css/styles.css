@@ -11,6 +11,13 @@
     box-sizing: border-box;
 }
 
+/* General Rules applied to most elements */
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
 body {
     background-color: #E6E6E9;
     font-family: NS Sans;
@@ -18,7 +25,11 @@ body {
     margin: 0em;
 }
 
-/* Menu Balken */
+header {
+    color: #003082;
+}
+
+/* Menu */
 
 header {
     background-color: white;
@@ -37,7 +48,6 @@ header .navigatie {
 .navigatie section {
     width: 15em;
     display: flex;
-    padding:
 }
 
 .navigatie section{
@@ -55,7 +65,14 @@ header .navigatie {
 }
 
 .genreBalk {
+    padding-top: .5em;
+    padding-bottom: .5em;
+/*    max-width: 90vw;*/
     margin: auto;
+}
+
+.genreBalk ul {
+    text-align: center;
 }
 
 .genreBalk ul li {
@@ -67,13 +84,73 @@ header .navigatie {
     margin: 0 1em;
 }
 
+
 /* MAIN CONTENT */
 
-main {
-    padding: 1em;
+fieldset {
+    border: none;
 }
 
-/* Media Query for all sreen >1080 px */
+main {
+    display:flex;
+    flex-wrap: wrap;
+/*    max-width: 100em;*/
+}
+
+.intro {
+    padding: .8em;
+    background-color: #ffc917;
+    width: 30em;
+    box-shadow: 0 2px 0 #e7b618;
+    position: absolute;
+    margin: auto;
+}
+
+.introImg {
+    width: 100%;
+    height: 100%;
+}
+
+.itemList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    background-color: white;
+/*    padding: 1em;*/
+    width: 30em;
+    margin: .5em;
+    box-shadow: 0 3px 0 #E6E6E9, 0 6px 0 #c5c5cb
+}
+
+.item img {
+    width: 100%;
+}
+
+.item .itemText {
+    padding: 1em;
+    width: 100%;
+
+}
+
+.item a {
+    display: block;
+    background-color: #0079d3;
+    padding: 1em 1.5em;
+    margin-top: 5e?m;
+    text-align: center;
+    width: 10em;
+    box-shadow: 0 2px 0 #005ca0;
+    transition: background-color .25s ease-in-out;
+}
+
+.item a:hover {
+    background-color: #005ca0;
+}
+
+
+/* Media Query for all screen >1080 px */
 
 @media  screen
         and (min-width: 1000px)
