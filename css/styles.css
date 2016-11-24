@@ -1,6 +1,10 @@
 /* Geschreven door Steven Whitton */
 /* Frontend 2016 Project WEB */
 
+@font-face {
+    font-family: NS Sans;
+    src: url(/../font/nssans__-webfont.ttf)
+}
 
 /* Borderbox applied to all elements */
 * {
