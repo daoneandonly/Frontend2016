@@ -32,10 +32,6 @@
                             <p>Mijn NS</p>
                         </a>
                     </section>
-                    <section class="english">
-                        <img src="english.png" alt="" class="icon">
-                        <a href="#">English</a>
-                    </section>
                 </section>
             </nav>
         </header>
@@ -63,17 +59,24 @@
                <a href="#filterForm">Filteren</a>
                <fieldset>
                    <form id="filterForm" action="">
-                        <label for="beoordeling">Beoordeling</label>
+                        <label for="beoordeling">Minimale beoordeling</label>
                         <input type="range" id="beoordeling" min="1" value="1" max="5" step="1">
                    </form>
                    <form action="">
                        <p>Lengte</p>
-                       <input type="checkbox" value="Kort (5 min)">
-                       <label for="">Kort (5 min)</label>
-                       <input type="checkbox" value="Gemiddeld (15 min)">
-                       <label for="">Gemiddeld (15 min)</label>
-                       <input type="checkbox" value="Lang (15+ min)">
-                       <label for="">Lang (15 min)</label>
+                       <input id="kort" type="checkbox" value="kort">
+                       <label for="kort">Kort (5 min)</label>
+                       <input id="gemiddeld" type="checkbox" value="gemiddeld">
+                       <label for="gemiddeld">Gemiddeld (15 min)</label>
+                       <input id="lang" type="checkbox" value="lang">
+                       <label for="lang">Lang (15 min)</label>
+
+                       <p>Volgorde</p>
+                       <select name="volgorde" id="volgorde">
+                            <option value="beste">Best Beoordeeld</option>
+                            <option value="AZ">Alfabetisch A - Z</option>
+                            <option value="ZA">Alfabetisch Z - A</option>
+                       </select>
                    </form>
                </fieldset>
            </aside>
