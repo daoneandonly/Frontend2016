@@ -1,5 +1,13 @@
 /* Geschreven door Steven Whitton */
 /* Frontend 2016 Project WEB */
+/* COLOR PALLETE
+    Blue: #003082
+    Gray: #E6E6E9
+    Yellow: #e7b618
+
+*/
+
+
 
 @font-face {
     font-family: NS Sans;
@@ -13,6 +21,7 @@
 
 /* General Rules applied to most elements */
 
+
 a {
     text-decoration: none;
     color: white;
@@ -21,23 +30,26 @@ a {
 body {
     background-color: #E6E6E9;
     font-family: NS Sans;
+    font: 1em/1.25em NS Sans;
+    color: #003082;
     padding: 0em;
     margin: 0em;
 }
 
-header {
-    color: #003082;
+ul {
+    list-style: none;
 }
 
-/* Menu */
+/* ----------------- MOBILE FIRST FLOOR CODE ------------------ */
 
 header {
     background-color: white;
     width: 100%;
 }
 
-.header .icon {
-    width: ;
+.icon + p {
+    display: none;
+    color: black;
 }
 
 header .navigatie {
@@ -54,68 +66,103 @@ header .navigatie {
     display: flex;
 }
 
-.navigatie section{
-    width: 33%;
-}
 
 .navigatie img {
     max-width: 5em;
     margin: .5em;
 }
 
-.genreBalk {
-    background-color: #003082;
-    width: 100%;
-}
+/* INTRO */
 
-.genreBalk {
-    padding-top: .5em;
-    padding-bottom: .5em;
-/*    max-width: 90vw;*/
-    margin: auto;
-}
-
-.genreBalk ul {
-    text-align: center;
-}
-
-.genreBalk ul li {
-    list-style: none;
-    display: inline-block;
-    padding: .5em;
-    background-color: #003082;
-    color: white;
-    margin: 0 1em;
-}
-
-
-/* MAIN CONTENT */
-
-fieldset {
-    border: none;
-}
-
-main {
-    display:flex;
-    flex-wrap: wrap;
-/*    max-width: 100em;*/
+main .introImg {
+    max-width: 100%;
 }
 
 .intro {
-    padding: .8em;
-    background-color: rgba(255, 201, 23, 0.85);
-    width: 30em;
-    box-shadow: 0 2px 0 #e7b618;
-    position: relative;
-/*    margin: auto;*/
-    left: 25%;
-    top: 60%;
+    font-size: 1.2em;
+    color: white;
+    padding: 1em;
+    background-color: #2e5497;
+}
+
+/* FILTER BAR */
+
+main li, main ul{
+    margin: 0;
+    padding: 0;
+}
+
+.genreBalk ul {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #FFC917;
+    box-shadow: inset 0 -3px 0 0 #e7b618;
+    justify-content: space-around;
+    align-items: center;
+/*    height: 5em;*/
+}
+
+.genreBalk li {
+
+    display: block;
+    text-align: center;
+}
+
+.genreBalk li a {
+    color: black;
+    display: block;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+/* SORT AND FILTER FIELDSET */
+
+.filter {
+    background-color: #0079d3;
+}
+
+fieldset {
+    color: white;
+    border: 0;
+    border-style: none;
+    display: flex;
+    margin: 1em 0 0 0;
+    padding: 0.1em 2;
+    display: none;
+}
+
+
+.filter a {
+    font-size: .9em;
+    display: block;
+    margin-top: 0em;
+    padding: .5em;
+    border-bottom: 3px inset #2e5497;
+    text-align: right;
+}
+
+
+input, input[type="checkbox"] + label {
+    display: block;
+    margin-left: 1em;
 
 }
 
-.introImg {
+/* ITEMS */
+
+.itemList > h1 {
+    background-color: white;
     width: 100%;
-    height: 100%;
+    margin: 0.5em 0 0 0;
+    padding: .5em;
+    font-size: 2.5em;
+    text-align: center;
+    height: 1.5em;
+}
+
+.item {
+    background-color: white;
+    margin-bottom: .5em;
 }
 
 .itemList {
@@ -123,44 +170,133 @@ main {
     flex-wrap: wrap;
 }
 
-.item {
-    background-color: white;
-/*    padding: 1em;*/
-    width: 30em;
-    margin: .5em;
-    box-shadow: 0 3px 0 #E6E6E9, 0 6px 0 #c5c5cb
-}
-
-.item img {
+.itemList img {
     width: 100%;
 }
 
-.item .itemText {
+.itemList .item h1 {
+    font-size: 2em;
+    line-height: normal;
+/*    margin: .2em;*/
+}
+
+.itemList .itemText {
     padding: 1em;
-    width: 100%;
-
+    font-size: 1.1em;
 }
 
-.item a {
+.itemList a {
     display: block;
     background-color: #0079d3;
-    padding: 1em 1.5em;
-    margin-top: 5e?m;
+    border-bottom: 3px inset #2e5497;
     text-align: center;
     width: 10em;
-    box-shadow: 0 2px 0 #005ca0;
-    transition: background-color .25s ease-in-out;
-}
-
-.item a:hover {
-    background-color: #005ca0;
+    padding: 1em;
 }
 
 
-/* Media Query for all screen >1080 px */
+/* ------------------------------ MEDIA QUERY TABLET BREAKPOINT --------------------------*/
 
-@media  screen
-        and (min-width: 1000px)
-        and (max-width: 1500px) {
-
+@media (min-width: 40em){
+    body {
+/*        background-color: aqua;*/
+    }
 }
+
+/* ------------------------------ MEDIA QUERY DESKTOP BREAKPOINT --------------------------*/
+
+x@media (min-width: 95em) {
+        .genreBalk {
+/*            background-color: #003082;*/
+            width: 100%;
+        }
+
+        .genreBalk {
+            padding-top: .5em;
+            padding-bottom: .5em;
+        /*    max-width: 90vw;*/
+            margin: auto;
+        }
+
+        .genreBalk ul {
+            text-align: center;
+        }
+
+        .genreBalk ul li {
+            list-style: none;
+            display: inline-block;
+            padding: .5em;
+            background-color: #003082;
+            color: white;
+            margin: 0 1em;
+        }
+
+
+        /* MAIN CONTENT */
+
+        fieldset {
+            border: none;
+        }
+
+        main {
+            display:flex;
+            flex-wrap: wrap;
+        /*    max-width: 100em;*/
+        }
+
+        .intro {
+            padding: .8em;
+            background-color: rgba(255, 201, 23, 0.85);
+            width: 30em;
+            box-shadow: 0 2px 0 #e7b618;
+            position: absolute;
+        /*    margin: auto;*/
+            left: 25%;
+            top: 60%;
+
+        }
+
+        .introImg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .itemList {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .item {
+            background-color: white;
+        /*    padding: 1em;*/
+            width: 30em;
+            margin: .5em;
+            box-shadow: 0 3px 0 #E6E6E9, 0 6px 0 #c5c5cb
+        }
+
+        .item img {
+            width: 100%;
+        }
+
+        .item .itemText {
+            padding: 1em;
+            width: 100%;
+
+        }
+
+        .item a {
+            display: block;
+            background-color: #0079d3;
+            padding: 1em 1.5em;
+            margin-top: 5em;
+            text-align: center;
+            width: 10em;
+            box-shadow: 0 2px 0 #005ca0;
+            transition: background-color .25s ease-in-out;
+        }
+
+        .item a:hover {
+            background-color: #005ca0;
+}
+}
+

@@ -10,13 +10,15 @@
         <header>
             <nav class="navigatie">
                 <section class="headerLeft">
-                    <img src="img/nslogo.png" alt="">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Logo_NS.svg" alt="">
+                    <img src="img/nslogo.svg" alt="">
+<!--                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Logo_NS.svg" alt="">-->
                     <p>Menu</p>
                 </section>
+<!--
                 <section>
-<!--                    <h1>NS Reisverhalen</h1>-->
+                    <h1>NS Reisverhalen</h1>
                 </section>
+-->
                 <section class="headerRight">
                     <section class="search">
                         <a href="#">
@@ -58,22 +60,26 @@
             </section>
 
             <aside class="filter">
+               <a href="#filterForm">Filteren</a>
                <fieldset>
-                  <legend>Filteren</legend>
-                   <form action="">
+                   <form id="filterForm" action="">
                         <label for="beoordeling">Beoordeling</label>
                         <input type="range" id="beoordeling" min="1" value="1" max="5" step="1">
                    </form>
                    <form action="">
-                       <label for="lengte">Lengte</label>
+                       <p>Lengte</p>
                        <input type="checkbox" value="Kort (5 min)">
+                       <label for="">Kort (5 min)</label>
                        <input type="checkbox" value="Gemiddeld (15 min)">
+                       <label for="">Gemiddeld (15 min)</label>
                        <input type="checkbox" value="Lang (15+ min)">
+                       <label for="">Lang (15 min)</label>
                    </form>
                </fieldset>
            </aside>
 
            <section class="itemList">
+                <h1>Aanbevolen</h1>
                 <section class="item item1">
                     <img src="img/artikelImage1.jpg" alt="">
                     <section class="itemText">

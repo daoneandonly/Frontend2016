@@ -1,0 +1,92 @@
+.genreBalk {
+    background-color: #003082;
+    width: 100%;
+}
+
+.genreBalk {
+    padding-top: .5em;
+    padding-bottom: .5em;
+/*    max-width: 90vw;*/
+    margin: auto;
+}
+
+.genreBalk ul {
+    text-align: center;
+}
+
+.genreBalk ul li {
+    list-style: none;
+    display: inline-block;
+    padding: .5em;
+    background-color: #003082;
+    color: white;
+    margin: 0 1em;
+}
+
+
+/* MAIN CONTENT */
+
+fieldset {
+    border: none;
+}
+
+main {
+    display:flex;
+    flex-wrap: wrap;
+/*    max-width: 100em;*/
+}
+
+.intro {
+    padding: .8em;
+    background-color: rgba(255, 201, 23, 0.85);
+    width: 30em;
+    box-shadow: 0 2px 0 #e7b618;
+    position: absolute;
+/*    margin: auto;*/
+    left: 25%;
+    top: 60%;
+
+}
+
+.introImg {
+    width: 100%;
+    height: 100%;
+}
+
+.itemList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    background-color: white;
+/*    padding: 1em;*/
+    width: 30em;
+    margin: .5em;
+    box-shadow: 0 3px 0 #E6E6E9, 0 6px 0 #c5c5cb
+}
+
+.item img {
+    width: 100%;
+}
+
+.item .itemText {
+    padding: 1em;
+    width: 100%;
+
+}
+
+.item a {
+    display: block;
+    background-color: #0079d3;
+    padding: 1em 1.5em;
+    margin-top: 5em;
+    text-align: center;
+    width: 10em;
+    box-shadow: 0 2px 0 #005ca0;
+    transition: background-color .25s ease-in-out;
+}
+
+.item a:hover {
+    background-color: #005ca0;
+}
