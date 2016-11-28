@@ -36,6 +36,10 @@ header {
     width: 100%;
 }
 
+.header .icon {
+    width: ;
+}
+
 header .navigatie {
     display: flex;
     flex-direction: row;
@@ -99,11 +103,14 @@ main {
 
 .intro {
     padding: .8em;
-    background-color: #ffc917;
+    background-color: rgba(255, 201, 23, 0.85);
     width: 30em;
     box-shadow: 0 2px 0 #e7b618;
-    position: absolute;
-    margin: auto;
+    position: relative;
+/*    margin: auto;*/
+    left: 25%;
+    top: 60%;
+
 }
 
 .introImg {
