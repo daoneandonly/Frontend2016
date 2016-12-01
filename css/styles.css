@@ -21,6 +21,9 @@
 
 /* General Rules applied to most elements */
 
+ul, li {
+    list-style: none;
+}
 
 a {
     text-decoration: none;
@@ -43,8 +46,21 @@ ul {
 /* ----------------- MOBILE FIRST FLOOR CODE ------------------ */
 
 header {
-    background-color: white;
+    background: url(../img/Abonnement.jpg) no-repeat;
+    background-size: 150%;
+    background-position: center top;
+    margin-bottom: .1em;
     width: 100%;
+    position: relative;
+    display: flex;
+/*    flex-direction: column;*/
+    justify-content: space-between;
+    height: 25em;
+}
+
+header ul {
+    display: flex;
+    flex: wrap;
 }
 
 .icon + p {
@@ -57,8 +73,12 @@ header .navigatie {
     flex-direction: row;
     width: 100%;
     flex-wrap: wrap;
-    height: 3em;
+    height: 3.5em;
     justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 3px 0 0 rgba(197, 197, 203, 0.85);
+    position: fixed;
+    z-index: 1;
 }
 
 .navigatie section {
@@ -74,15 +94,12 @@ header .navigatie {
 
 /* INTRO */
 
-main .introImg {
-    max-width: 100%;
-}
-
 .intro {
     font-size: 1.2em;
     color: white;
     padding: 1em;
     background-color: #2e5497;
+    align-self: flex-end;
 }
 
 /* FILTER BAR */
@@ -110,8 +127,8 @@ main li, main ul{
 .genreBalk li a {
     color: black;
     display: block;
-    padding-top: .5em;
-    padding-bottom: .5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 /* SORT AND FILTER FIELDSET */
@@ -138,6 +155,11 @@ fieldset {
     padding: .5em;
     border-bottom: 3px inset #2e5497;
     text-align: right;
+}
+
+
+input[type=range] {
+
 }
 
 
@@ -174,7 +196,9 @@ input[type="checkbox"] {
 
 .item {
     background-color: white;
-    margin-bottom: .5em;
+    margin-bottom: .5em .5em .1em .5em;
+    margin: 0em;
+    padding: 0em;
 }
 
 .itemList {
@@ -185,6 +209,7 @@ input[type="checkbox"] {
 .itemList img {
     width: 100%;
 }
+
 
 .itemList .item h1 {
     font-size: 2em;
@@ -203,6 +228,15 @@ input[type="checkbox"] {
     text-align: center;
     width: 10em;
     padding: 1em;
+    max-height: 3.5em;
+}
+
+.itemList a + p {
+    display: block;
+    text-align: right;
+    margin-left: 4em;
+    padding: 1em 0 1em 1em;
+    background-image: ;
 }
 
 
@@ -218,8 +252,13 @@ input[type="checkbox"] {
 
 @media (min-width: 95em) {
 
-    .headerRight section {
-        width: auto;
+    header {
+        background-size: 100%;
+        height: 40vw;
+    }
+
+    header ul li {
+/*        width: auto;*/
     }
 
     .icon + p {
@@ -229,11 +268,11 @@ input[type="checkbox"] {
     .intro {
         padding: .8em;
         background-color: rgba(46, 84, 151, 0.85);
-        width: 30em;
+        max-width: 30em;
         box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.2);
         position: absolute;
         left: 25%;
-        top: 60%;
+        bottom: 1em;
     }
 
     .introImg {
@@ -245,12 +284,14 @@ input[type="checkbox"] {
         width: 100%;
     }
 
-    ul li {
+    main ul li {
         padding: .5em;
+        background-color: #FFC917;
         background: linear-gradient(to top, #e7b618 50%, #FFC917 50%);
         background-size: 100% 200%;
-        background-position:left top;
+        background-position: left top;
         transition: all .15s linear;
+        font-size: 1.2em;
     }
 
     ul li > a {
@@ -267,7 +308,6 @@ input[type="checkbox"] {
         background-color: #e7b618;
         color: white;
         background-position:left bottom;
-
     }
 
     main {
@@ -290,14 +330,15 @@ input[type="checkbox"] {
         max-width: 85%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
         margin-top: 1em;
     }
 
     .itemList > h1 {
         margin-top: 0;
         text-align: left;
-        font-size: 3.5em;
+        font-size: 2.5em;
+        background-color:#E6E6E9;
     }
 
     .itemList .item h1 {
@@ -308,7 +349,7 @@ input[type="checkbox"] {
         background-color: white;
         width: 30em;
         margin-bottom: 2em;
-        box-shadow: 0 3px 0 #E6E6E9, 0 6px 0 #c5c5cb
+        box-shadow: 0 3px 0 #E6E6E9, 0 6px 0 #c5c5cb;
     }
 
     .item img {
