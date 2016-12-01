@@ -58,9 +58,27 @@ header {
     height: 25em;
 }
 
+.headerRight {
+
+}
+
 header ul {
     display: flex;
+    flex-wrap: wrap;
+    width: 15em;
+    height: 100%;
+}
+
+
+header ul li {
+    display: flex;
     flex: wrap;
+    flex-direction: column;
+}
+
+li a {
+   display: flex;
+    flex-wrap: wrap;
 }
 
 .icon + p {
@@ -255,14 +273,6 @@ input[type="checkbox"] {
     header {
         background-size: 100%;
         height: 40vw;
-    }
-
-    header ul li {
-/*        width: auto;*/
-    }
-
-    .icon + p {
-        display: inline-block;
     }
 
     .intro {
