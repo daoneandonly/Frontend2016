@@ -53,32 +53,28 @@ header {
     width: 100%;
     position: relative;
     display: flex;
-/*    flex-direction: column;*/
     justify-content: space-between;
     height: 25em;
 }
 
-.headerRight {
-
+.headerLeft {
+    margin-left: 2em;
+    width: auto;
 }
 
 header ul {
     display: flex;
     flex-wrap: wrap;
-    width: 15em;
-    height: 100%;
+/*    height: 100%;*/
 }
 
 
-header ul li {
+header ul li a {
+    margin: -1em 0;
+    padding; 0;
     display: flex;
     flex: wrap;
-    flex-direction: column;
-}
 
-li a {
-   display: flex;
-    flex-wrap: wrap;
 }
 
 .icon + p {
@@ -257,22 +253,68 @@ input[type="checkbox"] {
     background-image: ;
 }
 
+.lightbox {
+    position: fixed;
+    display: none;
+    background-color: rgba(0,0,0,0.75);
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.lightbox section {
+    width: 25em;
+    margin: 10em auto;
+    padding: 3em;
+    background-color: white;
+}
+
+.lightbox form input {
+    margin-bottom: 1.5em;
+    margin-left: -.1em;
+}
+
+.lightbox a {
+    color: darkblue;
+    font-size: .75em;
+}
 
 /* ------------------------------ MEDIA QUERY TABLET BREAKPOINT --------------------------*/
 
-@media (min-width: 40em){
+@media (min-width: 39em){
     body {
-/*        background-color: aqua;*/
+        background-color: darkgrey;
+    }
+
+    header {
+        background-size: 125%;
+    }
+
+    header nav + section{
+        width: 75%;
+        max-width: 35em;
+        margin: 0 auto 2em auto;
+    }
+
+    main .item {
+/*        width: 50%;*/
+        max-width: 35em;
+        margin: auto;
+/*        width: 50%;*/
     }
 }
 
-/* ------------------------------ MEDIA QUERY DESKTOP BREAKPOINT --------------------------*/
+/* ------------------------------ MEDIA QUERY DESKTOP BREAKPOINT 95em / 107em --------------------------*/
 
-@media (min-width: 95em) {
+@media (min-width: 107em) {
 
     header {
         background-size: 100%;
         height: 40vw;
+    }
+
+    header .icon + p {
+        display: block;
     }
 
     .intro {
@@ -304,17 +346,17 @@ input[type="checkbox"] {
         font-size: 1.2em;
     }
 
-    ul li > a {
+    main ul li > a {
         padding: 5em;
         transition: all .25s ease-in;
     }
 
-    ul li a:hover {
+    main ul li a:hover {
         color: white;
 
     }
 
-    ul li:hover {
+    main ul li:hover {
         background-color: #e7b618;
         color: white;
         background-position:left bottom;
@@ -360,6 +402,7 @@ input[type="checkbox"] {
         width: 30em;
         margin-bottom: 2em;
         box-shadow: 0 3px 0 #E6E6E9, 0 6px 0 #c5c5cb;
+        max-width: none;
     }
 
     .item img {
