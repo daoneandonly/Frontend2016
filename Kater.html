@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   <img class="mobile" src="img/kater-mobile.jpg" alt="">
+   <img class="tablet" src="img/kater-tablet.jpg" alt="">
+   <img class="desktop" src="img/kater-desktop.jpg" alt="">
+
+   <style>
+       body {
+           margin: 0;
+           padding: 0;
+       }
+
+       img {
+           width: 100%;
+       }
+
+       .tablet, .desktop {
+           display: none;
+       }
+
+       @media (min-width: 800px) {
+           .tablet{
+               display: block;
+           }
+
+           .mobile, .desktop {
+                display: none;
+           }
+       }
+
+       @media (min-width: 1500px) {
+           .desktop{
+               display: block;
+           }
+
+           .mobile, .tablet {
+               display: none;
+           }
+       }
+
+    </style>
+</body>
+</html>
